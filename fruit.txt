@@ -1,0 +1,12 @@
+apples
+oranges
+pears
+bananas
+lemons
+grapes
+mangos
+watermelons
+pineapples
+strawberries
+melons
+limes
