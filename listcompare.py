@@ -21,7 +21,7 @@ def expandHistory(history):
 history = []
 
 filename = raw_input('Enter file path: ') 
-print(filename)
+print("Processing %s" % filename)
 names = []
 scores = {}
 finalscores = {}
@@ -31,14 +31,14 @@ if os.path.exists(filename):
     for line in file_contents:
         line = re.sub("\n", "", line)
         names.append(line)
-        print(line)
+        #print(line)
     numberofitems = len(names)
     numberlist = [numberofitems] * numberofitems
     scoresTuples = zip(names, numberlist)
     #print(scoresTuples)
     scores = dict(scoresTuples)
     #print(scores)
-    
+    print('\n')
         
     for score in range(numberofitems, 0, -1):
         #print(score)
@@ -72,7 +72,8 @@ if os.path.exists(filename):
         #print("%s\n" % history)
         history = expandHistory(history)
         #print("%s\n" % history)
-    print(scores)
+    #print(scores)
+    print("\nComparisons complete, below is the ranked list:\n")
     for key in finalscores:
         print("%d: %s"%(key,finalscores[key]))
 else:
