@@ -32,6 +32,11 @@ I'm not sure this is an entirely fair assumption to make, but it can significant
 
 ### Improvements/To-Do:
 Delete empty lines
+
 Randomise Dict so choice order isn't always the same
+
 Output to file
+
 Make GUI
+
+Change how History is stored so that items with the '&' character won't disrupt it
